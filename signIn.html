@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PWM | Sign In</title>
+    <link rel="stylesheet" href="Styles/navBar.css" />
+    <link rel="stylesheet" href="Styles/signup.css" />
+    <link rel="stylesheet" href="Styles/signin.css" />
+    <link rel="icon" href="Images/icon.png" />
+  </head>
+  <body>
+    <div class="navbar"></div>
+
+    <div id="mainSignUpCont">
+      <div class="imageDiv">
+        <img
+          src="https://via.placeholder.com/400x300?text=Login+Image"
+          alt="login"
+        />
+      </div>
+      <div class="form_page">
+        <h1>Login to <span class="diff">PWM</span></h1>
+        <div class="erro_div" style="display: none">
+          <p>Incorrect username or password.</p>
+          <span
+            class="iconify hide_erro_msg"
+            data-icon="gridicons:cross-small"
+          ></span>
+        </div>
+        <form id="loginForm">
+          <label>Username</label>
+          <input type="text" id="login_username" placeholder="Enter Username" />
+          <label>Password</label>
+          <input
+            type="password"
+            id="login_password"
+            placeholder="Enter Password"
+          />
+          <input type="submit" value="Sign in" />
+        </form>
+
+        <div class="new_acc">
+          <p>New to PWM? <a href="signUp.html">Create an account</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import navbar from "./components/navbar.js";
+      document.querySelector(".navbar").innerHTML = navbar();
+    </script>
+    <script src="Scripts/itemsInCart.js" type="module"></script>
+    <script src="Scripts/signin.js"></script>
+  </body>
+</html>

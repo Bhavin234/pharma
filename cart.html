@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PWM | Cart</title>
+    <link rel="stylesheet" href="Styles/navBar.css" />
+    <link rel="stylesheet" href="Styles/cart.css" />
+    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="navbar"></div>
+
+    <div class="cart-container">
+      <h1>Your Cart</h1>
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filled by JS -->
+        </tbody>
+      </table>
+
+      <div class="cart-footer">
+        <h3>Total: <span id="total-amount">₹0</span></h3>
+        <button id="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import navbar from "./components/navbar.js";
+      let nav = document.querySelector(".navbar");
+      nav.innerHTML = navbar();
+
+      import footer from "./components/footer.js";
+      let foot = document.querySelector("#footer");
+      foot.innerHTML = footer();
+    </script>
+    <script src="Scripts/cart.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders - PWM</title>
+    <link rel="stylesheet" href="Styles/navBar.css" />
+    <link rel="stylesheet" href="Styles/myorders.css" />
+    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="navbar"></div>
+
+    <main>
+      <h2>My Orders</h2>
+      <div id="orders-container"></div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+      import navbar from "./components/navbar.js";
+      import footer from "./components/footer.js";
+
+      document.querySelector(".navbar").innerHTML = navbar();
+      document.getElementById("footer").innerHTML = footer();
+    </script>
+    <script src="Scripts/itemsInCart.js" type="module"></script>
+    <script src="Scripts/myorders.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PWM | Pharmacy Website</title>
+    <link rel="stylesheet" href="Styles/navBar.css" />
+    <link rel="stylesheet" href="Styles/index.css" />
+    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar"></div>
+
+    <!-- Hero Section -->
+    <header>
+      <img src="https://via.placeholder.com/1200x300" alt="Hero Banner" />
+    </header>
+
+    <!-- Product Grid Rendered by JS -->
+    <section>
+      <h2 style="text-align:center; margin-top: 20px;">Available Products</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="firstDiv">
+        <div class="f_logo">
+          <a href="#">
+            <img src="Images/icon.png" alt="PWM Logo" style="width: 120px" />
+          </a>
+        </div>
+        <div>
+          <p>
+            PWM is your neighborhood pharmacy platform for checking availability
+            of medicines and essentials in your area. Trusted, convenient, and fast.
+          </p>
+        </div>
+      </div>
+
+      <div class="secondDiv">
+        <div>
+          <h5>COMPANY</h5>
+          <ul>
+            <li><a href="#">About PWM</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>USEFUL LINKS</h5>
+          <ul>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+            <li><a href="myorders.html">My Orders</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>CONTACT INFO</h5>
+          <ul>
+            <li>📞 +91 99999 99999</li>
+            <li>✉️ support@pwm.com</li>
+            <li>📍 123, Local Street, City</li>
+            <li><small>Delivery only within 2km radius*</small></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="last">
+        <p style="text-align: center; padding: 10px;">
+          &copy; 2025 PWM. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module">
+      import navbar from "./components/navbar.js";
+      document.querySelector(".navbar").innerHTML = navbar();
+    </script>
+    <script src="Scripts/itemsInCart.js" type="module"></script>
+    <script src="Scripts/home.js" type="module"></script>
+    <script src="Scripts/nav.js"></script>
+  </body>
+</html>

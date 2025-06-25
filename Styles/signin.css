@@ -1,0 +1,11 @@
+.form_page input[type="submit"] {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
